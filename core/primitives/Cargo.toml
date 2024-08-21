@@ -58,46 +58,44 @@ rand = ["dep:rand", "rand_chacha", "near-crypto/rand", "itertools"]
 clock = ["near-time/clock"]
 dump_errors_schema = ["near-rpc-error-macro/dump_errors_schema"]
 protocol_feature_fix_staking_threshold = [
-  "near-primitives-core/protocol_feature_fix_staking_threshold",
+    "near-primitives-core/protocol_feature_fix_staking_threshold",
 ]
 protocol_feature_fix_contract_loading_cost = [
-  "near-primitives-core/protocol_feature_fix_contract_loading_cost",
+    "near-primitives-core/protocol_feature_fix_contract_loading_cost",
 ]
 protocol_feature_reject_blocks_with_outdated_protocol_version = [
-  "near-primitives-core/protocol_feature_reject_blocks_with_outdated_protocol_version",
+    "near-primitives-core/protocol_feature_reject_blocks_with_outdated_protocol_version",
 ]
 protocol_feature_nonrefundable_transfer_nep491 = [
-  "near-primitives-core/protocol_feature_nonrefundable_transfer_nep491",
+    "near-primitives-core/protocol_feature_nonrefundable_transfer_nep491",
 ]
 
 nightly = [
-  "near-fmt/nightly",
-  "near-parameters/nightly",
-  "near-primitives-core/nightly",
-  "near-primitives/nightly",
-  "nightly_protocol",
-  "protocol_feature_fix_contract_loading_cost",
-  "protocol_feature_fix_staking_threshold",
-  "protocol_feature_nonrefundable_transfer_nep491",
-  "protocol_feature_reject_blocks_with_outdated_protocol_version",
+    "near-fmt/nightly",
+    "near-parameters/nightly",
+    "near-primitives-core/nightly",
+    "near-primitives/nightly",
+    "nightly_protocol",
+    "protocol_feature_fix_contract_loading_cost",
+    "protocol_feature_fix_staking_threshold",
+    "protocol_feature_nonrefundable_transfer_nep491",
+    "protocol_feature_reject_blocks_with_outdated_protocol_version",
 ]
 
 nightly_protocol = [
-  "near-fmt/nightly_protocol",
-  "near-parameters/nightly_protocol",
-  "near-primitives-core/nightly_protocol",
-  "near-primitives/nightly_protocol",
+    "near-fmt/nightly_protocol",
+    "near-parameters/nightly_protocol",
+    "near-primitives-core/nightly_protocol",
+    "near-primitives/nightly_protocol",
 ]
 
 statelessnet_protocol = ["near-primitives-core/statelessnet_protocol"]
 
 new_epoch_sync = []
-default = ["rand", "clock"]
+default = ["serde"]
 calimero_zero_storage = []
 
-protocol_schema = [
-  "near-structs-checker-lib/protocol_schema",
-]
+protocol_schema = ["near-structs-checker-lib/protocol_schema"]
 
 [dev-dependencies]
 chrono = { workspace = true, features = ["clock"] }
